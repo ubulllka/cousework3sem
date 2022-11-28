@@ -1,20 +1,20 @@
-let offset = 0;
-const slider = document.querySelector('.inf-us-slider-line')
-const count = slider.getElementsByTagName('img').length;
+let offset1 = 0;
+const slider1 = document.querySelector('.inf-us-slider-line')
+const count1 = slider1.getElementsByTagName('img').length;
 
 document.querySelector('.inf-us-slider-prev').addEventListener('click', function(){
-    offset = offset - 28;
-    if (offset < 0) {
-        offset = 28*(count-1);
+    offset1 = offset1 - 28;
+    if (offset1 < 0) {
+        offset1 = 28*(count1-1);
     }
-    slider.style.left = -offset + 'vmax';
+    slider1.style.left = -offset1 + 'vmax';
 });
 
 document.querySelector('.inf-us-slider-next').addEventListener('click', function(){
-    offset = offset + 28;
-    if (offset > 28*(count-1)) {
-        offset = 0;
+    offset1 = offset1 + 28;
+    if (offset1 > 28*(count1-1)) {
+        offset1 = 0;
     }
-    slider.style.left = -offset + 'vmax';
+    slider1.style.left = -offset1 + 'vmax';
 });
 
