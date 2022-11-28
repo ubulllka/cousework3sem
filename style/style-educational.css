@@ -1,0 +1,154 @@
+.heading{
+  margin-top: calc(70px + 6vw);
+  margin-left: 10vw;
+  font-size:  4.5vmin;
+  letter-spacing: 3px;
+}
+.edu-head{
+  display: block;
+  width: 50%;
+  margin: 10px 10vw;
+}
+.edu-head-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.edu-head-btn a{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border: 2px solid #231449;
+  font-weight: 600;
+  color: #231449;
+  border-radius: 20px;
+}
+section{
+  margin: 15vmin 10vw;
+}
+.inform-block{
+  display: flex;
+  justify-content: space-between;
+}
+.inform-text{
+  width: 50%;
+}
+
+.inform-block-photo{
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .inform-block{
+    flex-direction: column;
+  }
+  .inform-text{
+    width: auto;
+  }
+  .inform-block-photo{
+    width: auto;
+    margin-top: 0;
+  }
+}
+.dep-block{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap:10px;
+  row-gap: 30px;
+  justify-items: center;
+}
+.dep-card{
+  position: relative;
+  width: 280px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+}
+
+.dep-card-pic{
+  position: absolute;
+  top: 0;
+  left: -2px;
+}
+.dep-card-pic img{
+  display: block;
+  width: 160%;
+  height: 160%;
+  transition: all .5s ease-in-out;
+}
+.dep-card-text{
+  position: absolute;
+  top: 190px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 5px;
+  width: calc(100%-6px);
+  border: 3px solid grey;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+}
+.dep-card-text h3{
+  margin-top: 30px;
+  transition: all .5s ease-in-out;
+}
+.dep-card-text p{
+  opacity: 0;
+  margin-top: -5px;
+  font-size: 14px;
+  transition: all .5s ease-in-out;
+}
+.dep-card:hover{
+  transform: scale(1.05);
+}
+.dep-card:hover .dep-card-pic img{
+  height: 100%;
+  width: 100%;
+}
+.dep-card:hover .dep-card-text{
+  top: 120px;
+  height: 160px;
+}
+.dep-card:hover .dep-card-text p{
+  opacity: 1;
+}
+.dep-card:hover .dep-card-text h3{
+  margin-top: 20px;
+}
+
+table{
+  border: 3px solid #231449;
+  margin: 0 auto;
+  border-collapse:collapse;
+}
+
+table td,
+table th{
+  padding: 10px;
+}
+
+thead tr {
+  background-color: #b3a4da;
+}
+table tr{
+  border: 2px solid #231449;
+  padding: 10px;
+  
+}
+
+
+
+
+
+
+#third-pairs{
+  margin-bottom: 21vmin;
+}

@@ -1,0 +1,84 @@
+.heading{
+  margin-top: calc(70px + 6vw);
+  margin-left: 10vw;
+  font-size:  4.5vmin;
+  letter-spacing: 3px;
+}
+.gallery-head{
+  display: block;
+  width: 50%;
+  margin: 10px 10vw;
+}
+.gallery-head-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-head p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.gallery-head-btn a{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border: 2px solid #231449;
+  font-weight: 600;
+  color: #231449;
+  border-radius: 20px;
+}
+section{
+  margin: 15vmin 10vw;
+}
+.col-2{
+  grid-column: span 2;
+}
+.row-2{
+  grid-row: span 2;
+}
+.block{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  gap:15px;
+  grid-auto-flow: dense;
+}
+.pic{
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all .3s ease-in-out;
+}
+.pic:hover{
+  transform: scale(1.04);
+}
+.pic img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 800px) {
+  .col-2{
+    grid-column: span 1;
+  }
+}
+.gallery-end{
+  margin: 0 10vw;
+  margin-bottom: 22vmin;
+  display: flex;
+  justify-content: flex-end;
+}
+.gallery-end a{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #231449;
+  color: #FFF;
+}

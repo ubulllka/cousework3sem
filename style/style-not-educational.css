@@ -1,0 +1,95 @@
+.heading{
+  margin-top: calc(70px + 6vw);
+  margin-left: 10vw;
+  font-size:  4.5vmin;
+  letter-spacing: 3px;
+}
+.not-edu-head{
+  display: block;
+  width: 50%;
+  margin: 10px 10vw;
+}
+.not-edu-head-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.not-edu-head-btn a{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border: 2px solid #231449;
+  font-weight: 600;
+  color: #231449;
+  border-radius: 20px;
+}
+section{
+  margin: 15vmin 10vw;
+}
+.charging-block{
+  display: flex;
+  justify-content: space-between;
+}
+.charging-text{
+  width: 50%;
+}
+
+.charging-block-photo{
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .charging-block{
+    flex-direction: column;
+  }
+  .charging-text{
+    width: auto;
+  }
+  .charging-block-photo{
+    width: auto;
+    margin-top: 0;
+  }
+}
+.intel-block-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.intel-slider-line{
+  position: absolute;
+  height: 18vmax;
+  display: flex;
+}
+.intel-slider{
+  margin: 10px;
+  height: 18vmax;
+  width: 72vmax;
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.intel-slider-pic{
+  display: block;
+  width: 24vmax;
+  height: 18vmax;
+}
+@media (max-width:800px) {
+  .intel-slider{
+    width: 48vmax;
+  }
+}
+@media (max-width:520px) {
+  .intel-slider{
+    width: 24vmax;
+  }
+}
+.not-edu-theatre{
+  margin-bottom: 21vmin;
+}
+
+
+
