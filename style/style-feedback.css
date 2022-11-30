@@ -152,6 +152,7 @@
   height: fit-content;
   border-radius: 20px;
   border: 2px solid #231449;
+  cursor: pointer;
 }
 
 .f-btn-parent:checked ~ .label-radio-parent,
