@@ -141,7 +141,7 @@ body{
 }
 .footer-block{
   position: absolute;
-  top: 17vw;
+  top: 15vw;
   left: 9vw;
   height: calc(100%-16.5vw);
   z-index: 2;
