@@ -145,7 +145,7 @@ body{
   top: 17vw;
   left: 9vw;
   height: calc(100%-16.5vw);
-  z-index: 2;
+  z-index: 4;
   display: grid;
   grid-template-columns: 35vw 10vw;
   align-items: flex-end;
